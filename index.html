@@ -9,38 +9,38 @@
   <body>
     <div class="calculate">
       <div class="display">
-        <input type="text" placeholder="0" />
+        <input id="input" type="number" placeholder="0" />
       </div>
       <div class="operator">
         <div class="row">
-          <span class="item">C</span>
-          <span class="item">()</span>
-          <span class="item">%</span>
-          <span class="item">Delete</span>
+          <span class="item" data-action="clear">C</span>
+          <span class="item" data-action="brackets">()</span>
+          <span class="item" data-action="percent">%</span>
+          <span class="item" data-action="delete">Delete</span>
         </div>
         <div class="row">
-          <span class="item">7</span>
-          <span class="item">8</span>
-          <span class="item">9</span>
-          <span class="item">X</span>
+          <span class="item" data-value="7">7</span>
+          <span class="item" data-value="8">8</span>
+          <span class="item" data-value="9">9</span>
+          <span class="item" data-action="*">X</span>
         </div>
         <div class="row">
-          <span class="item">4</span>
-          <span class="item">5</span>
-          <span class="item">6</span>
-          <span class="item">-</span>
+          <span class="item" data-value="4">4</span>
+          <span class="item" data-value="5">5</span>
+          <span class="item" data-value="6">6</span>
+          <span class="item" data-action="-">-</span>
         </div>
         <div class="row">
-          <span class="item">1</span>
-          <span class="item">2</span>
-          <span class="item">3</span>
-          <span class="item">+</span>
+          <span class="item" data-value="1">1</span>
+          <span class="item" data-value="2">2</span>
+          <span class="item" data-value="3">3</span>
+          <span class="item" data-action="+">+</span>
         </div>
         <div class="row">
-          <span class="item">+/-</span>
-          <span class="item">0</span>
-          <span class="item">,</span>
-          <span class="item">=</span>
+          <span class="item" data-action="/">/</span>
+          <span class="item" data-value="0">0</span>
+          <span class="item" data-action=".">,</span>
+          <span class="item" data-action="equal">=</span>
         </div>
       </div>
     </div>
