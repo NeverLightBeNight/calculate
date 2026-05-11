@@ -7,41 +7,26 @@
     <title>Calculate</title>
   </head>
   <body>
-    <div class="calculate">
-      <div class="display">
-        <input id="input" type="number" placeholder="0" />
-      </div>
-      <div class="operator">
-        <div class="row">
-          <span class="item" data-action="clear">C</span>
-          <span class="item" data-action="brackets">()</span>
-          <span class="item" data-action="percent">%</span>
-          <span class="item" data-action="delete">Delete</span>
-        </div>
-        <div class="row">
-          <span class="item" data-value="7">7</span>
-          <span class="item" data-value="8">8</span>
-          <span class="item" data-value="9">9</span>
-          <span class="item" data-action="*">X</span>
-        </div>
-        <div class="row">
-          <span class="item" data-value="4">4</span>
-          <span class="item" data-value="5">5</span>
-          <span class="item" data-value="6">6</span>
-          <span class="item" data-action="-">-</span>
-        </div>
-        <div class="row">
-          <span class="item" data-value="1">1</span>
-          <span class="item" data-value="2">2</span>
-          <span class="item" data-value="3">3</span>
-          <span class="item" data-action="+">+</span>
-        </div>
-        <div class="row">
-          <span class="item" data-action="/">/</span>
-          <span class="item" data-value="0">0</span>
-          <span class="item" data-action=".">,</span>
-          <span class="item" data-action="equal">=</span>
-        </div>
+    <div class="calculator">
+      <input type="text" id="display" readonly />
+      <div class="buttons">
+        <button data-num>7</button>
+        <button data-num>8</button>
+        <button data-num>9</button>
+        <button data-op>/</button>
+        <button data-num>4</button>
+        <button data-num>5</button>
+        <button data-num>6</button>
+        <button data-op>*</button>
+        <button data-num>1</button>
+        <button data-num>2</button>
+        <button data-num>3</button>
+        <button data-op>-</button>
+        <button data-num>0</button>
+        <button data-num>.</button>
+        <button id="equals">=</button>
+        <button data-op>+</button>
+        <button id="clear">C</button>
       </div>
     </div>
     <script src="calculate.js"></script>
